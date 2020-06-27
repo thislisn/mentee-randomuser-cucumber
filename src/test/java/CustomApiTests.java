@@ -98,5 +98,4 @@ public class CustomApiTests extends Hooks {
                 .assertThat()
                 .body("results.collect{it.dob.age}.average()", lessThan(40));
     }
-
 }
