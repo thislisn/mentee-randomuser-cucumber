@@ -12,7 +12,6 @@ import static org.hamcrest.Matchers.*;
 
 @RunWith(DataProviderRunner.class)
 public class CustomApiTests extends Hooks {
-
     @Test
     @UseDataProvider(value = "resultsPerPage", location = RandomUserDataProvider.class)
     public void checkPersonGenderAllTheSame(int resultsPerPage) {
