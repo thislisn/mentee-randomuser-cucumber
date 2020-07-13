@@ -17,6 +17,4 @@ public class RandomUserStepDefinitions {
         BaseContext.setValue(ContextKey.API_RANDOM_USER_FIRST_NAME, name.getFirst());
         BaseContext.setValue(ContextKey.API_RANDOM_USER_LAST_NAME, name.getLast());
     }
-
-
 }
