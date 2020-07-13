@@ -6,7 +6,6 @@ import framework.context.BaseContext;
 import framework.context.ContextKey;
 import framework.dto.Name;
 import framework.dto.RandomUserNameDto;
-import io.restassured.RestAssured;
 
 public class RandomUserStepDefinitions {
     private final RandomUserApi randomUserApi = new RandomUserApi();
