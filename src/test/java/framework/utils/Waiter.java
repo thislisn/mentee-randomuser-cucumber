@@ -14,7 +14,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 public class Waiter {
     private static final Logger logger = LoggerFactory.getLogger(Waiter.class);
 
-    public <T> T waitUntilExpected(Function<WebDriver, T> function, final long... msToWait) {
+    public static <T> T waitUntilExpected(Function<WebDriver, T> function, final long... msToWait) {
         long msToWaitLoc = msToWait.length > 0 ? msToWait[0] : TimeOutConstants.DEFAULT_TIMEOUT_20_000_MS;
         WebDriverWait wait = new WebDriverWait(getWebDriver(), msToWaitLoc / 1000);
         wait.pollingEvery(Duration.of(TimeOutConstants.DEFAULT_POLLING_TIMEOUT_500_MS, ChronoUnit.MILLIS));
