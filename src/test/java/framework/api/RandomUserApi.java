@@ -34,6 +34,7 @@ public class RandomUserApi extends RestAssuredClient {
     private Response getRandomUserNameResponse() {
         return given()
                 .param("inc", "name")
+                .param("nat", "gb")
                 .param("results", 1)
                 .when()
                 .get();
